@@ -1,0 +1,1078 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#073b70">
+<meta name="description" content="Nilkanchan AC Services - Professional AC Repair, Installation, Maintenance and AMC Services in Purba Medinipur.">
+
+<title>Nilkanchan AC Services | Professional AC Solutions</title>
+
+<style>
+:root {
+  --primary:#073b70;
+  --secondary:#087ec1;
+  --light:#f2f7fc;
+  --white:#ffffff;
+  --text:#172b4d;
+  --muted:#64748b;
+  --border:#dce5ef;
+  --card:#ffffff;
+}
+
+body.dark {
+  --light:#101827;
+  --white:#182438;
+  --text:#f1f5f9;
+  --muted:#b0bdce;
+  --border:#334155;
+  --card:#182438;
+}
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+  scroll-behavior:smooth;
+}
+
+body {
+  background:var(--light);
+  color:var(--text);
+  transition:.3s;
+}
+
+a { text-decoration:none; color:inherit; }
+
+header {
+  background:var(--primary);
+  color:white;
+  padding:15px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:15px;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.logo {
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.logo-icon {
+  font-size:30px;
+}
+
+.logo h2 {
+  font-size:21px;
+}
+
+nav {
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+nav a {
+  font-size:14px;
+  font-weight:bold;
+}
+
+nav a:hover { color:#70d5ff; }
+
+.header-actions {
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+
+.theme-btn {
+  border:1px solid #ffffff55;
+  background:transparent;
+  color:white;
+  padding:9px;
+  border-radius:7px;
+  cursor:pointer;
+}
+
+.book-btn {
+  background:#0ca5ed;
+  color:white;
+  padding:11px 17px;
+  border-radius:7px;
+  font-weight:bold;
+}
+
+.hero {
+  min-height:440px;
+  background:linear-gradient(120deg,#052c55,#087ec1);
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:70px 20px;
+}
+
+.hero-content { max-width:850px; }
+
+.hero h1 {
+  font-size:45px;
+  line-height:1.2;
+  margin-bottom:20px;
+}
+
+.hero p {
+  font-size:17px;
+  line-height:1.8;
+  color:#e4f3ff;
+}
+
+.hero-buttons {
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:15px;
+  margin-top:30px;
+}
+
+.btn {
+  display:inline-block;
+  padding:14px 24px;
+  border-radius:8px;
+  font-weight:bold;
+  cursor:pointer;
+  border:none;
+}
+
+.btn-primary {
+  background:#ffffff;
+  color:#073b70;
+}
+
+.btn-outline {
+  border:1px solid white;
+  color:white;
+  background:transparent;
+}
+
+.container {
+  max-width:1150px;
+  margin:auto;
+  padding:65px 20px;
+}
+
+.section-title {
+  text-align:center;
+  margin-bottom:35px;
+}
+
+.section-title h2 {
+  color:var(--secondary);
+  font-size:30px;
+  margin-bottom:10px;
+}
+
+.section-title p {
+  color:var(--muted);
+  line-height:1.7;
+}
+
+.services {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.service-card {
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:13px;
+  padding:28px 20px;
+  text-align:center;
+  transition:.3s;
+}
+
+.service-card:hover {
+  transform:translateY(-6px);
+  box-shadow:0 8px 25px #00000012;
+}
+
+.service-icon {
+  font-size:38px;
+  margin-bottom:15px;
+}
+
+.service-card h3 {
+  margin-bottom:10px;
+  color:var(--secondary);
+}
+
+.service-card p {
+  color:var(--muted);
+  line-height:1.6;
+  font-size:14px;
+}
+
+.about-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:35px;
+  align-items:center;
+}
+
+.about-box {
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:15px;
+  padding:30px;
+  line-height:1.8;
+}
+
+.about-box h2 {
+  color:var(--secondary);
+  margin-bottom:15px;
+}
+
+.features {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+  margin-top:20px;
+}
+
+.feature {
+  background:var(--card);
+  border:1px solid var(--border);
+  padding:17px;
+  border-radius:10px;
+}
+
+.feature strong {
+  color:var(--secondary);
+}
+
+.booking-area {
+  background:var(--card);
+  border:1px solid var(--border);
+  padding:35px;
+  border-radius:16px;
+  box-shadow:0 5px 25px #00000010;
+  max-width:780px;
+  margin:auto;
+}
+
+.booking-area h2 {
+  text-align:center;
+  color:var(--secondary);
+  margin-bottom:10px;
+}
+
+.subtitle {
+  text-align:center;
+  color:var(--muted);
+  margin-bottom:25px;
+}
+
+.form-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:0 18px;
+}
+
+.full { grid-column:1/-1; }
+
+label {
+  display:block;
+  font-weight:bold;
+  margin:15px 0 7px;
+  font-size:14px;
+}
+
+input,select,textarea {
+  width:100%;
+  padding:13px;
+  border:1px solid var(--border);
+  border-radius:7px;
+  background:var(--light);
+  color:var(--text);
+  font-size:15px;
+  outline-color:var(--secondary);
+}
+
+textarea { resize:vertical; }
+
+.submit-btn {
+  width:100%;
+  padding:15px;
+  margin-top:23px;
+  border:none;
+  border-radius:8px;
+  background:var(--secondary);
+  color:white;
+  font-size:17px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.submit-btn:disabled {
+  opacity:.6;
+  cursor:wait;
+}
+
+.message {
+  margin-top:18px;
+  text-align:center;
+  font-weight:bold;
+  line-height:1.6;
+}
+
+.track-box {
+  max-width:650px;
+  margin:auto;
+  padding:30px;
+  border-radius:15px;
+  background:var(--card);
+  border:1px solid var(--border);
+}
+
+.track-box h2 {
+  color:var(--secondary);
+  text-align:center;
+  margin-bottom:15px;
+}
+
+.track-result {
+  margin-top:18px;
+  line-height:1.9;
+  overflow-wrap:anywhere;
+}
+
+.status {
+  display:inline-block;
+  padding:5px 12px;
+  border-radius:20px;
+  background:#fff0c2;
+  color:#805600;
+  font-weight:bold;
+}
+
+.why-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.why-card {
+  padding:23px;
+  border-radius:12px;
+  background:var(--card);
+  border:1px solid var(--border);
+  text-align:center;
+}
+
+.why-card h3 {
+  color:var(--secondary);
+  margin:10px 0;
+}
+
+.why-card p {
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.6;
+}
+
+.contact-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.contact-card {
+  text-align:center;
+  background:var(--card);
+  padding:25px;
+  border-radius:12px;
+  border:1px solid var(--border);
+}
+
+.contact-card h3 {
+  color:var(--secondary);
+  margin:10px 0;
+}
+
+.contact-card p {
+  color:var(--muted);
+}
+
+footer {
+  background:#052c55;
+  color:white;
+  text-align:center;
+  padding:35px 20px;
+  line-height:2;
+}
+
+.footer-links {
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:20px;
+  margin:15px 0;
+}
+
+.float-buttons {
+  position:fixed;
+  right:18px;
+  bottom:20px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  z-index:999;
+}
+
+.float-btn {
+  width:53px;
+  height:53px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-size:25px;
+  box-shadow:0 3px 12px #0003;
+}
+
+.whatsapp { background:#20bd5a; }
+.call { background:#087ec1; }
+
+@media(max-width:800px) {
+  header { padding:13px 4%; }
+  nav { display:none; }
+  .hero h1 { font-size:34px; }
+  .services { grid-template-columns:repeat(2,1fr); }
+  .about-grid { grid-template-columns:1fr; }
+  .why-grid { grid-template-columns:1fr 1fr; }
+  .contact-grid { grid-template-columns:1fr; }
+}
+
+@media(max-width:520px) {
+  .logo h2 { font-size:16px; }
+  .hero { min-height:390px; }
+  .hero h1 { font-size:29px; }
+  .services,.why-grid { grid-template-columns:1fr; }
+  .form-grid { grid-template-columns:1fr; }
+  .booking-area,.track-box { padding:20px; }
+  .container { padding:45px 15px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <span class="logo-icon">❄️</span>
+    <h2>Nilkanchan AC Services</h2>
+  </div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#booking">Booking</a>
+    <a href="#track">Track Booking</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="header-actions">
+    <button class="theme-btn" onclick="toggleTheme()" title="Dark Mode">🌙</button>
+    <a href="#booking" class="book-btn">Book Now</a>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>Professional AC Repair & Maintenance Services</h1>
+    <p>
+      Reliable AC Installation, Repair, Gas Charging and Maintenance.
+      Quality Service for Your Home, Office and Business.
+    </p>
+    <div class="hero-buttons">
+      <a href="#booking" class="btn btn-primary">Book a Service</a>
+      <a href="#services" class="btn btn-outline">Explore Services</a>
+    </div>
+  </div>
+</section>
+
+<section class="container" id="services">
+  <div class="section-title">
+    <h2>Our Services</h2>
+    <p>Complete air conditioning solutions at one place.</p>
+  </div>
+
+  <div class="services">
+    <div class="service-card">
+      <div class="service-icon">❄️</div>
+      <h3>AC Repair</h3>
+      <p>Diagnosis and repair of AC cooling, electrical and mechanical problems.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🔧</div>
+      <h3>AC Installation</h3>
+      <p>Professional Split AC and Window AC installation service.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">⚙️</div>
+      <h3>AC Maintenance</h3>
+      <p>Regular AC cleaning, inspection and preventive maintenance.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🧊</div>
+      <h3>Gas Charging</h3>
+      <p>Refrigerant leakage checking and gas charging when required.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">💧</div>
+      <h3>Water Leakage</h3>
+      <p>Drain pipe, water leakage and indoor unit drainage problem solutions.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🏢</div>
+      <h3>AMC Service</h3>
+      <p>Annual maintenance solutions for homes, hotels and offices.</p>
+    </div>
+  </div>
+</section>
+
+<section class="container" id="about">
+  <div class="about-grid">
+    <div class="about-box">
+      <h2>About Nilkanchan AC Services</h2>
+      <p>
+        Nilkanchan AC Services provides air conditioning repair,
+        installation and maintenance solutions in Purba Medinipur,
+        West Bengal.
+      </p>
+      <p>
+        Our goal is to provide reliable service, transparent
+        communication and convenient booking facilities.
+      </p>
+      <div class="features">
+        <div class="feature">✓ <strong>Reliable Service</strong></div>
+        <div class="feature">✓ <strong>Easy Booking</strong></div>
+        <div class="feature">✓ <strong>Home Service</strong></div>
+        <div class="feature">✓ <strong>AMC Solutions</strong></div>
+      </div>
+    </div>
+
+    <div class="about-box">
+      <h2>Why Choose Us?</h2>
+      <p>
+        We focus on proper diagnosis, customer communication
+        and professional AC maintenance.
+      </p>
+      <br>
+      <p>❄️ Split & Window AC Service</p>
+      <p>🔧 Installation & Repair</p>
+      <p>⚙️ Preventive Maintenance</p>
+      <p>🏢 Hotel & Office AMC Enquiries</p>
+      <p>📍 Purba Medinipur Service Area</p>
+    </div>
+  </div>
+</section>
+
+<section class="container" id="booking">
+  <div class="section-title">
+    <h2>Book Your AC Service</h2>
+    <p>Submit your details. Our team will contact you to confirm the appointment.</p>
+  </div>
+
+  <div class="booking-area">
+    <h2>Online Booking Form</h2>
+    <p class="subtitle">Fields marked * are required.</p>
+
+    <form id="bookingForm">
+      <div class="form-grid">
+
+        <div>
+          <label>Customer Name *</label>
+          <input name="customerName" type="text" placeholder="Enter your name" required maxlength="80">
+        </div>
+
+        <div>
+          <label>Mobile Number *</label>
+          <input name="mobile" type="tel" placeholder="10 digit number" pattern="[6-9][0-9]{9}" maxlength="10" required>
+        </div>
+
+        <div>
+          <label>Email Address</label>
+          <input name="email" type="email" placeholder="Enter email">
+        </div>
+
+        <div>
+          <label>District / City *</label>
+          <input name="city" type="text" placeholder="Purba Medinipur" required>
+        </div>
+
+        <div class="full">
+          <label>Full Address *</label>
+          <textarea name="address" rows="3" placeholder="House, Street, Village, PIN" required></textarea>
+        </div>
+
+        <div>
+          <label>AC Type *</label>
+          <select name="acType" required>
+            <option value="">Select AC Type</option>
+            <option>Split AC</option>
+            <option>Window AC</option>
+            <option>Cassette AC</option>
+            <option>Tower AC</option>
+            <option>Central AC</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div>
+          <label>AC Brand</label>
+          <select name="brand">
+            <option value="">Select Brand</option>
+            <option>Voltas</option>
+            <option>LG</option>
+            <option>Samsung</option>
+            <option>Daikin</option>
+            <option>Hitachi</option>
+            <option>Blue Star</option>
+            <option>Carrier</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div>
+          <label>AC Model</label>
+          <input name="model" type="text" placeholder="Enter AC model">
+        </div>
+
+        <div>
+          <label>Number of AC *</label>
+          <input name="quantity" type="number" min="1" max="100" value="1" required>
+        </div>
+
+        <div class="full">
+          <label>Service Required *</label>
+          <select name="serviceType" required>
+            <option value="">Select Service</option>
+            <option>AC General Service</option>
+            <option>AC Repair</option>
+            <option>AC Installation</option>
+            <option>AC Uninstallation</option>
+            <option>Gas Charging</option>
+            <option>Water Leakage Problem</option>
+            <option>AMC Service</option>
+          </select>
+        </div>
+
+        <div class="full">
+          <label>Problem Details</label>
+          <textarea name="problem" rows="3" placeholder="Describe your AC problem"></textarea>
+        </div>
+
+        <div>
+          <label>Preferred Booking Date *</label>
+          <input type="date" name="bookingDate" id="bookingDate" required>
+        </div>
+
+        <div>
+          <label>Preferred Booking Time *</label>
+          <select name="bookingTime" required>
+            <option value="">Select Time</option>
+            <option>9 AM - 11 AM</option>
+            <option>11 AM - 1 PM</option>
+            <option>1 PM - 3 PM</option>
+            <option>3 PM - 5 PM</option>
+            <option>5 PM - 7 PM</option>
+          </select>
+        </div>
+
+      </div>
+
+      <button type="submit" class="submit-btn" id="submitBtn">
+        Submit Booking
+      </button>
+
+      <p id="message" class="message" role="status" aria-live="polite"></p>
+      <div id="whatsappAfter" style="display:none;text-align:center;margin-top:15px">
+        <a id="whatsappLink" class="btn" style="background:#20bd5a;color:white" target="_blank" rel="noopener">
+          Send Booking on WhatsApp
+        </a>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="container" id="track">
+  <div class="section-title">
+    <h2>Track Your Booking</h2>
+    <p>Check your booking status using your Booking ID and mobile number.</p>
+  </div>
+
+  <div class="track-box">
+    <h2>Booking Status</h2>
+
+    <label>Booking ID *</label>
+    <input id="trackId" placeholder="Example: NKS-20261106-123456">
+
+    <label>Mobile Number *</label>
+    <input id="trackMobile" type="tel" maxlength="10" placeholder="Registered mobile number">
+
+    <button class="submit-btn" onclick="trackBooking()">Check Booking Status</button>
+
+    <div id="trackResult" class="track-result" role="status" aria-live="polite"></div>
+  </div>
+</section>
+
+<section class="container">
+  <div class="section-title">
+    <h2>Why Choose Nilkanchan?</h2>
+    <p>Customer-focused AC service solutions.</p>
+  </div>
+
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="service-icon">🛠️</div>
+      <h3>Professional Approach</h3>
+      <p>Proper inspection and service communication.</p>
+    </div>
+    <div class="why-card">
+      <div class="service-icon">📅</div>
+      <h3>Easy Appointment</h3>
+      <p>Book your preferred date and time online.</p>
+    </div>
+    <div class="why-card">
+      <div class="service-icon">🏢</div>
+      <h3>AMC Enquiries</h3>
+      <p>Maintenance enquiries for hotels and offices.</p>
+    </div>
+  </div>
+</section>
+
+<section class="container" id="contact">
+  <div class="section-title">
+    <h2>Contact Us</h2>
+    <p>Get in touch for AC service and maintenance enquiries.</p>
+  </div>
+
+  <div class="contact-grid">
+    <div class="contact-card">
+      <div class="service-icon">📞</div>
+      <h3>Call Us</h3>
+      <p>Speak with our service team.</p>
+      <br>
+      <a id="contactCall" href="#" class="book-btn">Call Now</a>
+    </div>
+
+    <div class="contact-card">
+      <div class="service-icon">💬</div>
+      <h3>WhatsApp</h3>
+      <p>Send your service enquiry.</p>
+      <br>
+      <a id="contactWhatsApp" href="#" target="_blank" rel="noopener" class="book-btn">Message Us</a>
+    </div>
+
+    <div class="contact-card">
+      <div class="service-icon">📍</div>
+      <h3>Service Area</h3>
+      <p>Purba Medinipur, West Bengal, India</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <h2>❄️ Nilkanchan AC Services</h2>
+  <p>Professional AC Repair, Installation & Maintenance</p>
+
+  <div class="footer-links">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#booking">Booking</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <p>Service Area: Purba Medinipur, West Bengal</p>
+  <p>© <span id="year"></span> Nilkanchan AC Services. All Rights Reserved.</p>
+</footer>
+
+<div class="float-buttons">
+  <a id="floatWhatsApp" href="#" target="_blank" rel="noopener" class="float-btn whatsapp" title="WhatsApp">☏</a>
+  <a id="floatCall" href="#" class="float-btn call" title="Call">☎</a>
+</div>
+
+<script>
+
+// ======================================
+// 1. BUSINESS SETTINGS
+// ======================================
+
+// Paste your deployed Apps Script URL here
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzRihLvuxE1lPqf2GY7BabFzhldioNo2QN3WJHXZarhcNfr1-1v0uia3CRhPzhXrIiHwg/exec";
+
+// Replace with your real WhatsApp number.
+// Use country code + number, without + or spaces.
+const BUSINESS_WHATSAPP = "919832698979";
+
+// Replace with your real phone number.
+const BUSINESS_PHONE = "919832698979";
+
+
+// ======================================
+// 2. INITIAL SETTINGS
+// ======================================
+
+const form = document.getElementById("bookingForm");
+const submitBtn = document.getElementById("submitBtn");
+const message = document.getElementById("message");
+const dateInput = document.getElementById("bookingDate");
+
+function getToday() {
+  const now = new Date();
+  const local = new Date(now.getTime() - now.getTimezoneOffset() * 60000);
+  return local.toISOString().split("T")[0];
+}
+
+dateInput.min = getToday();
+document.getElementById("year").textContent = new Date().getFullYear();
+
+function isConfigured(value) {
+  return value && !value.includes("XXXXXXXXXX");
+}
+
+function setContactLinks() {
+  const wa = isConfigured(BUSINESS_WHATSAPP)
+    ? "https://wa.me/" + BUSINESS_WHATSAPP
+    : "#";
+
+  const phone = isConfigured(BUSINESS_PHONE)
+    ? "tel:+" + BUSINESS_PHONE
+    : "#";
+
+  document.getElementById("contactCall").href = phone;
+  document.getElementById("contactWhatsApp").href = wa;
+  document.getElementById("floatWhatsApp").href = wa;
+  document.getElementById("floatCall").href = phone;
+}
+
+setContactLinks();
+
+
+// ======================================
+// 3. DARK MODE
+// ======================================
+
+function toggleTheme() {
+  document.body.classList.toggle("dark");
+
+  const dark = document.body.classList.contains("dark");
+  document.querySelector(".theme-btn").textContent = dark ? "☀️" : "🌙";
+
+  try {
+    localStorage.setItem("nilkanchanTheme", dark ? "dark" : "light");
+  } catch (e) {}
+}
+
+try {
+  if (localStorage.getItem("nilkanchanTheme") === "dark") {
+    document.body.classList.add("dark");
+    document.querySelector(".theme-btn").textContent = "☀️";
+  }
+} catch (e) {}
+
+
+// ======================================
+// 4. CREATE BOOKING ID
+// ======================================
+
+function createBookingId() {
+  const date = getToday().replaceAll("-", "");
+  const random = Math.floor(100000 + Math.random() * 900000);
+  return "NKS-" + date + "-" + random;
+}
+
+
+// ======================================
+// 5. SUBMIT BOOKING
+// ======================================
+
+form.addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  if (!form.reportValidity()) return;
+
+  if (!SCRIPT_URL.includes("/exec")) {
+    message.style.color = "red";
+    message.textContent = "Google Apps Script URL is missing.";
+    return;
+  }
+
+  const formData = new FormData(form);
+  const data = new URLSearchParams();
+
+  const bookingId = createBookingId();
+
+  for (const [key, value] of formData.entries()) {
+    data.append(key, value);
+  }
+
+  data.append("action", "book");
+  data.append("bookingId", bookingId);
+
+  submitBtn.disabled = true;
+  submitBtn.textContent = "Please wait...";
+  message.style.color = "var(--secondary)";
+  message.textContent = "Sending booking request...";
+
+  try {
+    // Google Apps Script receives this POST request.
+    // no-cors means the browser cannot read the server response.
+    await fetch(SCRIPT_URL, {
+      method: "POST",
+      mode: "no-cors",
+      body: data
+    });
+
+    message.style.color = "#16803d";
+    message.innerHTML =
+      "Your booking request has been sent.<br>" +
+      "Booking ID: <strong>" + bookingId + "</strong><br>" +
+      "Please save your Booking ID. Contact us for confirmation.";
+
+    // Prepare WhatsApp confirmation message.
+    const details =
+      "New AC Service Booking" +
+      "\nBooking ID: " + bookingId +
+      "\nName: " + data.get("customerName") +
+      "\nMobile: " + data.get("mobile") +
+      "\nCity: " + data.get("city") +
+      "\nService: " + data.get("serviceType") +
+      "\nAC Type: " + data.get("acType") +
+      "\nBooking Date: " + data.get("bookingDate") +
+      "\nTime: " + data.get("bookingTime");
+
+    if (isConfigured(BUSINESS_WHATSAPP)) {
+      document.getElementById("whatsappLink").href =
+        "https://wa.me/" + BUSINESS_WHATSAPP +
+        "?text=" + encodeURIComponent(details);
+
+      document.getElementById("whatsappAfter").style.display = "block";
+    }
+
+    form.reset();
+    dateInput.min = getToday();
+
+  } catch (error) {
+    console.error(error);
+    message.style.color = "red";
+    message.textContent = "Network error. Please try again.";
+  } finally {
+    submitBtn.disabled = false;
+    submitBtn.textContent = "Submit Booking";
+  }
+});
+
+
+// ======================================
+// 6. TRACK BOOKING
+// ======================================
+
+function trackBooking() {
+  const bookingId = document.getElementById("trackId").value.trim();
+  const mobile = document.getElementById("trackMobile").value.trim();
+  const result = document.getElementById("trackResult");
+
+  if (!bookingId || !/^[6-9][0-9]{9}$/.test(mobile)) {
+    result.textContent = "Please enter a valid Booking ID and 10 digit mobile number.";
+    result.style.color = "red";
+    return;
+  }
+
+  result.style.color = "var(--secondary)";
+  result.textContent = "Checking booking status...";
+
+  const callbackName = "bookingCallback_" + Date.now();
+
+  const script = document.createElement("script");
+
+  const timeout = setTimeout(() => {
+    result.textContent = "Unable to check booking. Please try again.";
+    cleanup();
+  }, 15000);
+
+  function cleanup() {
+    clearTimeout(timeout);
+    delete window[callbackName];
+    script.remove();
+  }
+
+  window[callbackName] = function(data) {
+    cleanup();
+
+    if (!data.success) {
+      result.style.color = "red";
+      result.textContent = data.message || "Booking not found.";
+      return;
+    }
+
+    result.style.color = "var(--text)";
+
+    const details = document.createElement("div");
+
+    const lines = [
+      ["Booking ID", data.bookingId],
+      ["Customer", data.customerName],
+      ["Service", data.serviceType],
+      ["Booking Date", data.bookingDate],
+      ["Booking Time", data.bookingTime],
+      ["Status", data.status]
+    ];
+
+    lines.forEach(([label, value]) => {
+      const p = document.createElement("p");
+      const strong = document.createElement("strong");
+      strong.textContent = label + ": ";
+      p.appendChild(strong);
+      p.appendChild(document.createTextNode(value || "-"));
+      details.appendChild(p);
+    });
+
+    result.replaceChildren(details);
+  };
+
+  script.onerror = function() {
+    cleanup();
+    result.style.color = "red";
+    result.textContent = "Connection error. Please try again.";
+  };
+
+  script.src = SCRIPT_URL +
+    "?action=track" +
+    "&bookingId=" + encodeURIComponent(bookingId) +
+    "&mobile=" + encodeURIComponent(mobile) +
+    "&callback=" + encodeURIComponent(callbackName);
+
+  document.body.appendChild(script);
+}
+
+</script>
+
+</body>
+</html>
